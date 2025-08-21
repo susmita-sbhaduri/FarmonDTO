@@ -19,6 +19,11 @@ public class FarmonDTO implements Serializable {
     private List<ResourceCropDTO> rescroplist;
     private List<LabourCropDTO> labcroplist;
     private List<FarmresourceDTO> farmresourcelist;
+    private FarmresourceDTO farmresourcerec;
+    private List<ShopDTO> shoplist;
+    private List<ShopResDTO> shopreslist;
+    private ShopResDTO shopresrec;
+    private FarmonResponse responses;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -74,6 +79,46 @@ public class FarmonDTO implements Serializable {
 
     public void setFarmresourcelist(List<FarmresourceDTO> farmresourcelist) {
         this.farmresourcelist = farmresourcelist;
+    }
+
+    public FarmresourceDTO getFarmresourcerec() {
+        return farmresourcerec;
+    }
+
+    public void setFarmresourcerec(FarmresourceDTO farmresourcerec) {
+        this.farmresourcerec = farmresourcerec;
+    }
+
+    public List<ShopDTO> getShoplist() {
+        return shoplist;
+    }
+
+    public void setShoplist(List<ShopDTO> shoplist) {
+        this.shoplist = shoplist;
+    }
+
+    public List<ShopResDTO> getShopreslist() {
+        return shopreslist;
+    }
+
+    public void setShopreslist(List<ShopResDTO> shopreslist) {
+        this.shopreslist = shopreslist;
+    }
+
+    public ShopResDTO getShopresrec() {
+        return shopresrec;
+    }
+
+    public void setShopresrec(ShopResDTO shopresrec) {
+        this.shopresrec = shopresrec;
+    }
+
+    public FarmonResponse getResponses() {
+        return responses;
+    }
+
+    public void setResponses(FarmonResponse responses) {
+        this.responses = responses;
     }
     
     
