@@ -26,6 +26,8 @@ public class FarmonDTO implements Serializable {
     private ResAcquireDTO resacqrec;
     private ExpenseDTO expenserec;
     private FarmonResponse responses;
+    private List<TaskPlanDTO> taskplanlist;
+    private TaskPlanDTO taskplanrec;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -137,6 +139,22 @@ public class FarmonDTO implements Serializable {
 
     public void setExpenserec(ExpenseDTO expenserec) {
         this.expenserec = expenserec;
+    }
+
+    public List<TaskPlanDTO> getTaskplanlist() {
+        return taskplanlist;
+    }
+
+    public void setTaskplanlist(List<TaskPlanDTO> taskplanlist) {
+        this.taskplanlist = taskplanlist;
+    }
+
+    public TaskPlanDTO getTaskplanrec() {
+        return taskplanrec;
+    }
+
+    public void setTaskplanrec(TaskPlanDTO taskplanrec) {
+        this.taskplanrec = taskplanrec;
     }
     
     
