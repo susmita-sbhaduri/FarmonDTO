@@ -28,6 +28,8 @@ public class FarmonDTO implements Serializable {
     private FarmonResponse responses;
     private List<TaskPlanDTO> taskplanlist;
     private TaskPlanDTO taskplanrec;
+    private String reportstartdt;
+    private String reportenddt;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -155,6 +157,22 @@ public class FarmonDTO implements Serializable {
 
     public void setTaskplanrec(TaskPlanDTO taskplanrec) {
         this.taskplanrec = taskplanrec;
+    }
+
+    public String getReportstartdt() {
+        return reportstartdt;
+    }
+
+    public void setReportstartdt(String reportstartdt) {
+        this.reportstartdt = reportstartdt;
+    }
+
+    public String getReportenddt() {
+        return reportenddt;
+    }
+
+    public void setReportenddt(String reportenddt) {
+        this.reportenddt = reportenddt;
     }
     
     
