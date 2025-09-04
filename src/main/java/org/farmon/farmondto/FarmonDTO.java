@@ -24,6 +24,7 @@ public class FarmonDTO implements Serializable {
     private List<ShopResDTO> shopreslist;
     private ShopResDTO shopresrec;
     private ResAcquireDTO resacqrec;
+    private List<ExpenseDTO> expenselist;
     private ExpenseDTO expenserec;
     private FarmonResponse responses;
     private List<TaskPlanDTO> taskplanlist;
@@ -173,6 +174,14 @@ public class FarmonDTO implements Serializable {
 
     public void setReportenddt(String reportenddt) {
         this.reportenddt = reportenddt;
+    }
+
+    public List<ExpenseDTO> getExpenselist() {
+        return expenselist;
+    }
+
+    public void setExpenselist(List<ExpenseDTO> expenselist) {
+        this.expenselist = expenselist;
     }
     
     

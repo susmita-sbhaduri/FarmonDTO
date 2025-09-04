@@ -11,10 +11,10 @@ import java.io.Serializable;
  * @author sb
  */
 public class ExpenseDTO implements Serializable {
-    private String expenseId;
-    private String date;
+    private String expenseId;    
     private String expenseType;
     private String expenseRefId;
+    private String date;
     private String expenditure;
     private String commString;
 
