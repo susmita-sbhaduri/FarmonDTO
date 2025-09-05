@@ -29,6 +29,7 @@ public class FarmonDTO implements Serializable {
     private FarmonResponse responses;
     private List<TaskPlanDTO> taskplanlist;
     private TaskPlanDTO taskplanrec;
+    private List<BatchExpenseDTO> expenselistrpt;
     private String reportstartdt;
     private String reportenddt;
     
@@ -182,6 +183,16 @@ public class FarmonDTO implements Serializable {
 
     public void setExpenselist(List<ExpenseDTO> expenselist) {
         this.expenselist = expenselist;
+    }
+
+    
+
+    public List<BatchExpenseDTO> getExpenselistrpt() {
+        return expenselistrpt;
+    }
+
+    public void setExpenselistrpt(List<BatchExpenseDTO> expenselistrpt) {
+        this.expenselistrpt = expenselistrpt;
     }
     
     
