@@ -16,8 +16,9 @@ public class FarmonDTO implements Serializable {
     private List<HarvestDTO> harvestlist;
     private ResourceCropDTO resourceCropDTO;
     private HarvestDTO harvestrecord;
+    private LabourCropDTO labcroprecord;
     private List<ResourceCropDTO> rescroplist;
-    private List<LabourCropDTO> labcroplist;
+    private List<LabourCropDTO> labcroplist;    
     private List<FarmresourceDTO> farmresourcelist;
     private FarmresourceDTO farmresourcerec;
     private List<ShopDTO> shoplist;
@@ -183,9 +184,7 @@ public class FarmonDTO implements Serializable {
 
     public void setExpenselist(List<ExpenseDTO> expenselist) {
         this.expenselist = expenselist;
-    }
-
-    
+    }    
 
     public List<BatchExpenseDTO> getExpenselistrpt() {
         return expenselistrpt;
@@ -193,6 +192,14 @@ public class FarmonDTO implements Serializable {
 
     public void setExpenselistrpt(List<BatchExpenseDTO> expenselistrpt) {
         this.expenselistrpt = expenselistrpt;
+    }
+
+    public LabourCropDTO getLabcroprecord() {
+        return labcroprecord;
+    }
+
+    public void setLabcroprecord(LabourCropDTO labcroprecord) {
+        this.labcroprecord = labcroprecord;
     }
     
     
