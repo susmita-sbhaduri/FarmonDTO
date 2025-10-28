@@ -33,6 +33,7 @@ public class FarmonDTO implements Serializable {
     private List<BatchExpenseDTO> expenselistrpt;
     private String reportstartdt;
     private String reportenddt;
+    List<ResAcqReportDTO> resacqreport;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -201,6 +202,12 @@ public class FarmonDTO implements Serializable {
     public void setLabcroprecord(LabourCropDTO labcroprecord) {
         this.labcroprecord = labcroprecord;
     }
-    
-    
+
+    public List<ResAcqReportDTO> getResacqreport() {
+        return resacqreport;
+    }
+
+    public void setResacqreport(List<ResAcqReportDTO> resacqreport) {
+        this.resacqreport = resacqreport;
+    }
 }
