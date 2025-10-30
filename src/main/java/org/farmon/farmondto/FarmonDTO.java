@@ -33,7 +33,8 @@ public class FarmonDTO implements Serializable {
     private List<BatchExpenseDTO> expenselistrpt;
     private String reportstartdt;
     private String reportenddt;
-    List<ResAcqReportDTO> resacqreport;
+    private List<ResAcqReportDTO> resacqreport;
+    private ResCropAllSummaryDTO rescropsummary;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -210,4 +211,14 @@ public class FarmonDTO implements Serializable {
     public void setResacqreport(List<ResAcqReportDTO> resacqreport) {
         this.resacqreport = resacqreport;
     }
+
+    public ResCropAllSummaryDTO getRescropsummary() {
+        return rescropsummary;
+    }
+
+    public void setRescropsummary(ResCropAllSummaryDTO rescropsummary) {
+        this.rescropsummary = rescropsummary;
+    }
+    
+    
 }
