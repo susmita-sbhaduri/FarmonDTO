@@ -35,6 +35,9 @@ public class FarmonDTO implements Serializable {
     private String reportenddt;
     private List<ResAcqReportDTO> resacqreport;
     private ResCropAllSummaryDTO rescropsummary;
+    private List<EmpExpDTO> empexplist;
+    private EmpExpDTO empexprec;
+    private EmployeeDTO emprec;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -218,6 +221,30 @@ public class FarmonDTO implements Serializable {
 
     public void setRescropsummary(ResCropAllSummaryDTO rescropsummary) {
         this.rescropsummary = rescropsummary;
+    }
+
+    public List<EmpExpDTO> getEmpexplist() {
+        return empexplist;
+    }
+
+    public void setEmpexplist(List<EmpExpDTO> empexplist) {
+        this.empexplist = empexplist;
+    }
+
+    public EmployeeDTO getEmprec() {
+        return emprec;
+    }
+
+    public void setEmprec(EmployeeDTO emprec) {
+        this.emprec = emprec;
+    }
+
+    public EmpExpDTO getEmpexprec() {
+        return empexprec;
+    }
+
+    public void setEmpexprec(EmpExpDTO empexprec) {
+        this.empexprec = empexprec;
     }
     
     
