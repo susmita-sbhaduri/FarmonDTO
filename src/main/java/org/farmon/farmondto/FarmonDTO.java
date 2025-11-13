@@ -30,7 +30,7 @@ public class FarmonDTO implements Serializable {
     private FarmonResponse responses;
     private List<TaskPlanDTO> taskplanlist;
     private TaskPlanDTO taskplanrec;
-    private List<BatchExpenseDTO> expenselistrpt;
+//    private List<BatchExpenseDTO> expenselistrpt;
     private String reportstartdt;
     private String reportenddt;
     private List<ResAcqReportDTO> resacqreport;
@@ -38,6 +38,7 @@ public class FarmonDTO implements Serializable {
     private List<EmpExpDTO> empexplist;
     private EmpExpDTO empexprec;
     private EmployeeDTO emprec;
+    private List<AllExpenseReportDTO> allexplist;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -189,15 +190,7 @@ public class FarmonDTO implements Serializable {
 
     public void setExpenselist(List<ExpenseDTO> expenselist) {
         this.expenselist = expenselist;
-    }    
-
-    public List<BatchExpenseDTO> getExpenselistrpt() {
-        return expenselistrpt;
-    }
-
-    public void setExpenselistrpt(List<BatchExpenseDTO> expenselistrpt) {
-        this.expenselistrpt = expenselistrpt;
-    }
+    }        
 
     public LabourCropDTO getLabcroprecord() {
         return labcroprecord;
@@ -245,6 +238,14 @@ public class FarmonDTO implements Serializable {
 
     public void setEmpexprec(EmpExpDTO empexprec) {
         this.empexprec = empexprec;
+    }
+
+    public List<AllExpenseReportDTO> getAllexplist() {
+        return allexplist;
+    }
+
+    public void setAllexplist(List<AllExpenseReportDTO> allexplist) {
+        this.allexplist = allexplist;
     }
     
     
