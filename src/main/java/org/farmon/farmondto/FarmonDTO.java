@@ -25,6 +25,7 @@ public class FarmonDTO implements Serializable {
     private List<ShopResDTO> shopreslist;
     private ShopResDTO shopresrec;
     private ResAcquireDTO resacqrec;
+    private List<ResAcquireDTO> resacqreclist;
     private List<ExpenseDTO> expenselist;
     private ExpenseDTO expenserec;
     private FarmonResponse responses;
@@ -264,6 +265,14 @@ public class FarmonDTO implements Serializable {
 
     public void setEmpleaverec(EmpLeaveDTO empleaverec) {
         this.empleaverec = empleaverec;
+    }
+
+    public List<ResAcquireDTO> getResacqreclist() {
+        return resacqreclist;
+    }
+
+    public void setResacqreclist(List<ResAcquireDTO> resacqreclist) {
+        this.resacqreclist = resacqreclist;
     }
     
     
