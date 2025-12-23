@@ -15,6 +15,7 @@ public class ResAcquireDTO implements Serializable {
     private String resoureId;
     private String acquireDate;
     private String amount;
+    
 
     public String getAcquireId() {
         return acquireId;
@@ -47,7 +48,7 @@ public class ResAcquireDTO implements Serializable {
     public void setAmount(String amount) {
         this.amount = amount;
     }
-    
+
     
     
 }

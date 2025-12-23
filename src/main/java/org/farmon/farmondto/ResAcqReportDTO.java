@@ -16,7 +16,7 @@ public class ResAcqReportDTO implements Serializable {
     private String acqDt;
     private String acqAmt;
     private String cost;
-
+    private String unit;
     
     public String getResName() {
         return resName;
@@ -49,5 +49,14 @@ public class ResAcqReportDTO implements Serializable {
     public void setCost(String cost) {
         this.cost = cost;
     }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+    
     
 }
