@@ -43,6 +43,7 @@ public class FarmonDTO implements Serializable {
     private List<EmployeeDTO> emplist;
     private List<AllExpenseReportDTO> allexplist;
     private List<EmpLeaveDTO> empleavelist;
+    private List<SensorDbDTO> sensordatalist;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -282,6 +283,14 @@ public class FarmonDTO implements Serializable {
 
     public void setEmpleavelist(List<EmpLeaveDTO> empleavelist) {
         this.empleavelist = empleavelist;
+    }
+
+    public List<SensorDbDTO> getSensordatalist() {
+        return sensordatalist;
+    }
+
+    public void setSensordatalist(List<SensorDbDTO> sensordatalist) {
+        this.sensordatalist = sensordatalist;
     }
     
     
