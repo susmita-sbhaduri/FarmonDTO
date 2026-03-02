@@ -9,9 +9,8 @@ public class SensorDTO {
 
     // These exact names must match the JSON keys from your C++ code
     private int boardId;
-    private double firstData;
-    private double secData;
-
+    private double data;
+    
     // 1. Mandatory empty constructor for Jackson ObjectMapper
     public SensorDTO() {
     }
@@ -25,19 +24,11 @@ public class SensorDTO {
         this.boardId = boardId;
     }
 
-    public double getFirstData() {
-        return firstData;
+    public double getData() {
+        return data;
     }
 
-    public void setFirstData(double firstData) {
-        this.firstData = firstData;
-    }
-
-    public double getSecData() {
-        return secData;
-    }
-
-    public void setSecData(double secData) {
-        this.secData = secData;
+    public void setData(double data) {
+        this.data = data;
     }
 }

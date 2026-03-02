@@ -10,11 +10,18 @@ import java.io.Serializable;
  *
  * @author sb
  */
-public class SensorDbDTO implements Serializable {
+public class SensordtlsDTO implements Serializable {
+    private String id;
     private String idsensor;
     private String parameter;
-    private String data;
-    private String updatetime;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getIdsensor() {
         return idsensor;
@@ -31,21 +38,6 @@ public class SensorDbDTO implements Serializable {
     public void setParameter(String parameter) {
         this.parameter = parameter;
     }
-
-    public String getData() {
-        return data;
-    }
-
-    public void setData(String data) {
-        this.data = data;
-    }
-
-    public String getUpdatetime() {
-        return updatetime;
-    }
-
-    public void setUpdatetime(String updatetime) {
-        this.updatetime = updatetime;
-    }
+    
     
 }
