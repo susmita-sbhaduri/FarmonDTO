@@ -22,6 +22,7 @@ public class FarmonDTO implements Serializable {
     private List<FarmresourceDTO> farmresourcelist;
     private FarmresourceDTO farmresourcerec;
     private List<ShopDTO> shoplist;
+    private ShopDTO shoprec;
     private List<ShopResDTO> shopreslist;
     private ShopResDTO shopresrec;
     private ResAcquireDTO resacqrec;
@@ -291,6 +292,14 @@ public class FarmonDTO implements Serializable {
 
     public void setSensordatalist(List<SensorDataDTO> sensordatalist) {
         this.sensordatalist = sensordatalist;
+    }
+
+    public ShopDTO getShoprec() {
+        return shoprec;
+    }
+
+    public void setShoprec(ShopDTO shoprec) {
+        this.shoprec = shoprec;
     }
     
     
