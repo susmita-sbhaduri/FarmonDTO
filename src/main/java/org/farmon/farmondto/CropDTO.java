@@ -12,10 +12,12 @@ import java.io.Serializable;
  * @author sb
  */
 public class CropDTO implements Serializable {
-    private String cropId;
-    private String cropCategory;
+    private String cropId;    
     private String cropName;
-    private String details;
+    private String totalStock;
+    private String unit;
+    private String startDate;
+    private String endDate;
 
     public String getCropId() {
         return cropId;
@@ -23,14 +25,6 @@ public class CropDTO implements Serializable {
 
     public void setCropId(String cropId) {
         this.cropId = cropId;
-    }
-
-    public String getCropCategory() {
-        return cropCategory;
-    }
-
-    public void setCropCategory(String cropCategory) {
-        this.cropCategory = cropCategory;
     }
 
     public String getCropName() {
@@ -41,12 +35,38 @@ public class CropDTO implements Serializable {
         this.cropName = cropName;
     }
 
-    public String getDetails() {
-        return details;
+    public String getTotalStock() {
+        return totalStock;
     }
 
-    public void setDetails(String details) {
-        this.details = details;
+    public void setTotalStock(String totalStock) {
+        this.totalStock = totalStock;
     }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
+    }
+
+    
     
 }

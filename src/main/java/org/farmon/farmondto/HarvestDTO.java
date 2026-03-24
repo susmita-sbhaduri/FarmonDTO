@@ -14,7 +14,7 @@ public class HarvestDTO implements Serializable {
     private String harvestid;
     private String siteid;
     private String siteName;
-    private String cropid;
+    private String harvestName;
     private String cropName;
     private String cropCategory;
     private String sowingDate;
@@ -69,13 +69,14 @@ public class HarvestDTO implements Serializable {
         this.siteid = siteid;
     }
 
-    public String getCropid() {
-        return cropid;
+    public String getHarvestName() {
+        return harvestName;
     }
 
-    public void setCropid(String cropid) {
-        this.cropid = cropid;
+    public void setHarvestName(String harvestName) {
+        this.harvestName = harvestName;
     }
+
 
     public String getCropCategory() {
         return cropCategory;
