@@ -15,7 +15,6 @@ public class CropDTO implements Serializable {
     private String cropId;    
     private String cropName;
     private String totalStock;
-    private String unit;
     private String startDate;
     private String endDate;
 
@@ -41,14 +40,6 @@ public class CropDTO implements Serializable {
 
     public void setTotalStock(String totalStock) {
         this.totalStock = totalStock;
-    }
-
-    public String getUnit() {
-        return unit;
-    }
-
-    public void setUnit(String unit) {
-        this.unit = unit;
     }
 
     public String getStartDate() {

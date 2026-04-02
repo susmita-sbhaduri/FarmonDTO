@@ -47,6 +47,8 @@ public class FarmonDTO implements Serializable {
     private List<SensorDataDTO> sensordatalist;
     private List<CropDTO> croplist;
     private CropDTO croprec;
+    private List<CropProductDTO> cropprodlist;
+    private CropProductDTO cropprodrec;
     private List<InventoryDTO> inventorylist;
     private InventoryDTO inventoryrec;
     private List<SalesDTO> saleslist;
@@ -354,6 +356,22 @@ public class FarmonDTO implements Serializable {
 
     public void setSalesrec(SalesDTO salesrec) {
         this.salesrec = salesrec;
+    }
+
+    public List<CropProductDTO> getCropprodlist() {
+        return cropprodlist;
+    }
+
+    public void setCropprodlist(List<CropProductDTO> cropprodlist) {
+        this.cropprodlist = cropprodlist;
+    }
+
+    public CropProductDTO getCropprodrec() {
+        return cropprodrec;
+    }
+
+    public void setCropprodrec(CropProductDTO cropprodrec) {
+        this.cropprodrec = cropprodrec;
     }
     
     

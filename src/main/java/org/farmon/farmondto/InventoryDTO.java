@@ -13,6 +13,7 @@ import java.io.Serializable;
 public class InventoryDTO implements Serializable {
     private String inventoryId;    
     private String cropId;
+    private String productId;
     private String harvestId;
     private String currentQty;
     private String lastupdatedate;
@@ -55,6 +56,14 @@ public class InventoryDTO implements Serializable {
 
     public void setLastupdatedate(String lastupdatedate) {
         this.lastupdatedate = lastupdatedate;
+    }
+
+    public String getProductId() {
+        return productId;
+    }
+
+    public void setProductId(String productId) {
+        this.productId = productId;
     }
     
 }
