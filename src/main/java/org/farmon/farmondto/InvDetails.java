@@ -16,6 +16,7 @@ public class InvDetails implements Serializable {
     private String cropName;
     private String productId;
     private String productName;
+    private String productUnit;
     private String harvestId;
     private String currentQty;
     private String lastupdatedate;
@@ -82,6 +83,14 @@ public class InvDetails implements Serializable {
 
     public void setLastupdatedate(String lastupdatedate) {
         this.lastupdatedate = lastupdatedate;
+    }
+
+    public String getProductUnit() {
+        return productUnit;
+    }
+
+    public void setProductUnit(String productUnit) {
+        this.productUnit = productUnit;
     }
     
 }
