@@ -13,9 +13,11 @@ import java.io.Serializable;
 public class SalesDTO implements Serializable {
     private String salesId;    
     private String cropId;
+    private String prodId;
     private String harvestId;
     private String quantitySold;
-    private String totalIncome;
+    private String priceperUnit;
+    private String salesDate;
 
     public String getSalesId() {
         return salesId;
@@ -49,12 +51,30 @@ public class SalesDTO implements Serializable {
         this.quantitySold = quantitySold;
     }
 
-    public String getTotalIncome() {
-        return totalIncome;
+    public String getProdId() {
+        return prodId;
     }
 
-    public void setTotalIncome(String totalIncome) {
-        this.totalIncome = totalIncome;
+    public void setProdId(String prodId) {
+        this.prodId = prodId;
     }
+
+    public String getPriceperUnit() {
+        return priceperUnit;
+    }
+
+    public void setPriceperUnit(String priceperUnit) {
+        this.priceperUnit = priceperUnit;
+    }
+
+    public String getSalesDate() {
+        return salesDate;
+    }
+
+    public void setSalesDate(String salesDate) {
+        this.salesDate = salesDate;
+    }
+
+    
     
 }
