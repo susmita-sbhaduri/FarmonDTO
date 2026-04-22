@@ -13,7 +13,10 @@ import java.io.Serializable;
 public class SalesDTO implements Serializable {
     private String salesId;    
     private String cropId;
+    
     private String prodId;
+    private String productname;
+    private String produnit;
     private String harvestId;
     private String quantitySold;
     private String priceperUnit;
@@ -75,6 +78,20 @@ public class SalesDTO implements Serializable {
         this.salesDate = salesDate;
     }
 
-    
+    public String getProductname() {
+        return productname;
+    }
+
+    public void setProductname(String productname) {
+        this.productname = productname;
+    }
+
+    public String getProdunit() {
+        return produnit;
+    }
+
+    public void setProdunit(String produnit) {
+        this.produnit = produnit;
+    }
     
 }
