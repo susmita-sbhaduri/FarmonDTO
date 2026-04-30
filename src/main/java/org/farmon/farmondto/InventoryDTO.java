@@ -18,6 +18,8 @@ public class InventoryDTO implements Serializable {
     private String currentQty;
     private String lastupdatedate;
 
+    
+
     public String getInventoryId() {
         return inventoryId;
     }
