@@ -49,6 +49,7 @@ public class FarmonDTO implements Serializable {
     private CropDTO croprec;
     private List<CropProductDTO> cropprodlist;
     private CropProductDTO cropprodrec;
+    private CropProdWithStock cropprodstock;
     private List<InventoryDTO> inventorylist;
     private InventoryDTO inventoryrec;
     private List<InvDetails> invdetailslist;
@@ -390,6 +391,14 @@ public class FarmonDTO implements Serializable {
 
     public void setInvdetailsrec(InvDetails invdetailsrec) {
         this.invdetailsrec = invdetailsrec;
+    }
+
+    public CropProdWithStock getCropprodstock() {
+        return cropprodstock;
+    }
+
+    public void setCropprodstock(CropProdWithStock cropprodstock) {
+        this.cropprodstock = cropprodstock;
     }
     
     
