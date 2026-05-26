@@ -56,6 +56,8 @@ public class FarmonDTO implements Serializable {
     private InvDetails invdetailsrec;
     private List<SalesDTO> saleslist;
     private SalesDTO salesrec;
+    private BuyerDTO buyerrec;
+    private List<BuyerDTO> buyerlist;
     
     
     public UserDTO getUserDto() {
@@ -401,5 +403,21 @@ public class FarmonDTO implements Serializable {
     public void setCropprodstock(CropProdWithStock cropprodstock) {
         this.cropprodstock = cropprodstock;
     } 
+
+    public BuyerDTO getBuyerrec() {
+        return buyerrec;
+    }
+
+    public void setBuyerrec(BuyerDTO buyerrec) {
+        this.buyerrec = buyerrec;
+    }
+
+    public List<BuyerDTO> getBuyerlist() {
+        return buyerlist;
+    }
+
+    public void setBuyerlist(List<BuyerDTO> buyerlist) {
+        this.buyerlist = buyerlist;
+    }
     
 }

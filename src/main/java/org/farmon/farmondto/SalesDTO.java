@@ -17,6 +17,8 @@ public class SalesDTO implements Serializable {
     private String productname;
     private String produnit;
     private String harvestId;
+    private String buyerId;
+    private String buyerName;
     private String quantitySold;
     private String priceperUnit;
     private String salesDate;
@@ -100,6 +102,22 @@ public class SalesDTO implements Serializable {
 
     public void setCurrentInventoryQty(String currentInventoryQty) {
         this.currentInventoryQty = currentInventoryQty;
+    }
+
+    public String getBuyerId() {
+        return buyerId;
+    }
+
+    public void setBuyerId(String buyerId) {
+        this.buyerId = buyerId;
+    }
+
+    public String getBuyerName() {
+        return buyerName;
+    }
+
+    public void setBuyerName(String buyerName) {
+        this.buyerName = buyerName;
     }
     
 }
