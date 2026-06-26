@@ -60,6 +60,8 @@ public class FarmonDTO implements Serializable {
     private List<BuyerDTO> buyerlist;
     private ProductStageDTO prodstagerec;
     private List<ProductStageDTO> prodstagelist;
+    private GrowthStageDTO growthstagerec;
+    private List<GrowthStageDTO> growthstagelist;
     
     public UserDTO getUserDto() {
         return userDto;
@@ -435,6 +437,22 @@ public class FarmonDTO implements Serializable {
 
     public void setProdstagelist(List<ProductStageDTO> prodstagelist) {
         this.prodstagelist = prodstagelist;
+    }
+
+    public GrowthStageDTO getGrowthstagerec() {
+        return growthstagerec;
+    }
+
+    public void setGrowthstagerec(GrowthStageDTO growthstagerec) {
+        this.growthstagerec = growthstagerec;
+    }
+
+    public List<GrowthStageDTO> getGrowthstagelist() {
+        return growthstagelist;
+    }
+
+    public void setGrowthstagelist(List<GrowthStageDTO> growthstagelist) {
+        this.growthstagelist = growthstagelist;
     }
     
 }
