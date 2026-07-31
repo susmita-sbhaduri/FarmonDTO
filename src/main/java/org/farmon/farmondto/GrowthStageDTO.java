@@ -14,6 +14,7 @@ public class GrowthStageDTO implements Serializable {
     private String id;
     private String harvestId;
     private String harvestName;
+    private String siteName;
     private String cropId;
     private String cropName;
     private String productId;
@@ -118,6 +119,14 @@ public class GrowthStageDTO implements Serializable {
 
     public void setUpdateDate(String updateDate) {
         this.updateDate = updateDate;
+    }
+
+    public String getSiteName() {
+        return siteName;
+    }
+
+    public void setSiteName(String siteName) {
+        this.siteName = siteName;
     }
     
 }
