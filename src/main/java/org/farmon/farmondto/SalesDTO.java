@@ -12,11 +12,15 @@ import java.io.Serializable;
  */
 public class SalesDTO implements Serializable {
     private String salesId;    
-    private String cropId;    
+    private String cropId;   
+    private String cropName; 
     private String prodId;
     private String productname;
     private String produnit;
     private String harvestId;
+    private String siteid;
+    private String siteName;
+    private String harvestName;
     private String buyerId;
     private String buyerName;
     private String quantitySold;
@@ -118,6 +122,38 @@ public class SalesDTO implements Serializable {
 
     public void setBuyerName(String buyerName) {
         this.buyerName = buyerName;
+    }
+
+    public String getCropName() {
+        return cropName;
+    }
+
+    public void setCropName(String cropName) {
+        this.cropName = cropName;
+    }
+
+    public String getSiteid() {
+        return siteid;
+    }
+
+    public void setSiteid(String siteid) {
+        this.siteid = siteid;
+    }
+
+    public String getSiteName() {
+        return siteName;
+    }
+
+    public void setSiteName(String siteName) {
+        this.siteName = siteName;
+    }
+
+    public String getHarvestName() {
+        return harvestName;
+    }
+
+    public void setHarvestName(String harvestName) {
+        this.harvestName = harvestName;
     }
     
 }

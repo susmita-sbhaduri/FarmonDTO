@@ -22,7 +22,10 @@ public class HarvestSalesDTO implements Serializable {
     private String salesQty;
     private String salesAmtRs;
     private String unit;
-
+    private String salesDt;
+    private String buyerId;
+    private String buyerName;
+    
     public String getHarvestid() {
         return harvestid;
     }
@@ -103,8 +106,6 @@ public class HarvestSalesDTO implements Serializable {
         this.salesAmtRs = salesAmtRs;
     }
 
-    
-
     public String getUnit() {
         return unit;
     }
@@ -112,7 +113,29 @@ public class HarvestSalesDTO implements Serializable {
     public void setUnit(String unit) {
         this.unit = unit;
     }
-    
-    
+
+    public String getSalesDt() {
+        return salesDt;
+    }
+
+    public void setSalesDt(String salesDt) {
+        this.salesDt = salesDt;
+    }
+
+    public String getBuyerId() {
+        return buyerId;
+    }
+
+    public void setBuyerId(String buyerId) {
+        this.buyerId = buyerId;
+    }
+
+    public String getBuyerName() {
+        return buyerName;
+    }
+
+    public void setBuyerName(String buyerName) {
+        this.buyerName = buyerName;
+    }
     
 }
