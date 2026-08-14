@@ -27,6 +27,8 @@ public class SalesDTO implements Serializable {
     private String priceperUnit;
     private String salesDate;
     private String currentInventoryQty;
+    private String totalSales;
+    private String expenseComments;
     
     public String getSalesId() {
         return salesId;
@@ -154,6 +156,22 @@ public class SalesDTO implements Serializable {
 
     public void setHarvestName(String harvestName) {
         this.harvestName = harvestName;
+    }
+
+    public String getTotalSales() {
+        return totalSales;
+    }
+
+    public void setTotalSales(String totalSales) {
+        this.totalSales = totalSales;
+    }
+
+    public String getExpenseComments() {
+        return expenseComments;
+    }
+
+    public void setExpenseComments(String expenseComments) {
+        this.expenseComments = expenseComments;
     }
     
 }
