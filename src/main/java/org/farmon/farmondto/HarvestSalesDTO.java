@@ -21,6 +21,7 @@ public class HarvestSalesDTO implements Serializable {
     private String productName;
     private String salesQty;
     private String salesAmtRs;
+    private String totalSales;
     private String unit;
     private String salesDt;
     private String buyerId;
@@ -136,6 +137,14 @@ public class HarvestSalesDTO implements Serializable {
 
     public void setBuyerName(String buyerName) {
         this.buyerName = buyerName;
+    }
+
+    public String getTotalSales() {
+        return totalSales;
+    }
+
+    public void setTotalSales(String totalSales) {
+        this.totalSales = totalSales;
     }
     
 }
