@@ -12,8 +12,13 @@ import java.io.Serializable;
  * @author sb
  */
 public class CropDTO implements Serializable {
+    private String id;
     private String cropId;    
     private String cropName;
+    private String harvestid;
+    private String siteid;
+    private String siteName;
+    private String harvestName;
     private String totalStock;
     private String startDate;
     private String endDate;
@@ -56,6 +61,46 @@ public class CropDTO implements Serializable {
 
     public void setEndDate(String endDate) {
         this.endDate = endDate;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getHarvestid() {
+        return harvestid;
+    }
+
+    public void setHarvestid(String harvestid) {
+        this.harvestid = harvestid;
+    }
+
+    public String getSiteid() {
+        return siteid;
+    }
+
+    public void setSiteid(String siteid) {
+        this.siteid = siteid;
+    }
+
+    public String getSiteName() {
+        return siteName;
+    }
+
+    public void setSiteName(String siteName) {
+        this.siteName = siteName;
+    }
+
+    public String getHarvestName() {
+        return harvestName;
+    }
+
+    public void setHarvestName(String harvestName) {
+        this.harvestName = harvestName;
     }
 
     
